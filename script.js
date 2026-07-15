@@ -1,14 +1,3 @@
-// document
-//   .getElementById("contact-form")
-//   .addEventListener("submit", function (e) {
-//     e.preventDefault();
-//     // Use an API or service like Formspree or Netlify Forms to avoid storing data on your own server.
-//     alert("Thank you. We will contact you with more info.");
-//   });
-
-// var GNEWS_API_KEY = '66c160d73065603b350fead122a8c1be'
-// var FIREBASE_PROJECT_ID = 'copwatch-fd64e';
-
 document.getElementById('year').textContent = new Date().getFullYear();
 
   // Mobile nav
@@ -41,7 +30,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
     var newsGrid = document.getElementById('newsGrid');
 
     // ---- Set your free GNews API key here. Leave as 'YOUR_GNEWS_API_KEY' to skip straight to the RSS fallback. ----
-    var GNEWS_API_KEY = "66c160d73065603b350fead122a8c1be";
+    var GNEWS_API_KEY = '66c160d73065603b350fead122a8c1be';
 
     var searchTerms = 'Okaloosa County (sheriff OR police OR deputy)';
     var query = encodeURIComponent(searchTerms);
@@ -174,7 +163,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
   var FIREBASE_PROJECT_ID = 'copwatch-fd64e'; // found in Firebase Console → Project Settings
 
   function firebaseConfigured(){
-    return FIREBASE_PROJECT_ID && FIREBASE_PROJECT_ID !== 'copwatch-fd64e';
+    return FIREBASE_PROJECT_ID && FIREBASE_PROJECT_ID !== 'YOUR_FIREBASE_PROJECT_ID';
   }
 
   function firestoreBaseUrl(){
@@ -421,7 +410,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
     }
     var subject = encodeURIComponent('[Okaloosa Copwatch] ' + reason + ' — ' + name);
     var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nReason: ' + reason + '\n\n' + message);
-    window.location.href = 'mailto:okaloosacopwatch@gmail.com?subject=' + subject + '&body=' + body;
+    window.location.href = 'mailto:okaloosacopwatch@protonmail.com?subject=' + subject + '&body=' + body;
     status.textContent = 'Opening your email app to send this message…';
     status.classList.add('show');
   });
