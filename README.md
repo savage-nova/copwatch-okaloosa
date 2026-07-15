@@ -214,3 +214,46 @@ var SPENDING_LOG = [
 9. Have a short consult with an ACLU FL or Bar-referral attorney before your first public flyer run — this week, low cost
 
 You can realistically have a live, donation-capable, LLC-shielded site up within **one to two weeks**, for under $500 total — with your personal information kept off every public filing along the way.
+
+---
+
+# Roadmap
+
+## Phase 1 — Foundation (Current)
+
+- [ ] Project scaffolding (client + server monorepo)
+- [ ] Database schema + Prisma setup
+- [ ] Auth (signup, login, JWT middleware)
+- [ ] Basic activity CRUD (API + UI)
+
+## Phase 2 — Core Experience
+
+- [ ] Activity list + detail pages with filtering
+- [ ] Stats summary dashboard
+- [ ] Form validation and error handling polish
+- [ ] Deploy a staging environment
+
+## Phase 3 — Maps & Media
+
+- [ ] Leaflet map integration on activity detail page
+- [ ] GPX file upload + parsing
+- [ ] Manual route drawing
+- [ ] Photo uploads
+
+## Phase 4 — Polish & Share
+
+- [ ] Elevation chart
+- [ ] Public profile pages
+- [ ] Mobile responsive pass
+- [ ] Activity search
+
+## Later / Ideas Backlog
+
+- Social features (following other users, kudos/comments)
+- Strava/Garmin import integration
+- PWA support for offline logging on trail
+- Weather data enrichment per activity (via public API)
+
+---
+
+Track progress against this roadmap by linking PRs to the relevant checkbox item. Update statuses here as features ship — see [Features](Features) for more detail on each item.
